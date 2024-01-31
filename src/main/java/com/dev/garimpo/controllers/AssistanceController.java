@@ -26,4 +26,6 @@ public class AssistanceController {
         List<Assistance> assistanceList = this.assistanceService.getAllAssistance();
         return ResponseEntity.ok().body(assistanceList);
     }
+
+
 }

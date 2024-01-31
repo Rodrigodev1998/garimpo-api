@@ -1,0 +1,5 @@
+
+CREATE TABLE categories (
+    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    type TEXT NOT NULL UNIQUE
+);

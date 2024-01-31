@@ -2,8 +2,11 @@ package com.dev.garimpo.service;
 
 import com.dev.garimpo.domain.assistance.Assistance;
 import com.dev.garimpo.domain.assistance.AssistanceRequestDTO;
+import com.dev.garimpo.domain.category.Category;
+import com.dev.garimpo.domain.handler.APIException;
 import com.dev.garimpo.repositories.AssistanceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

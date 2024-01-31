@@ -9,5 +9,6 @@ public record AssistanceRequestDTO(
 
         @NotNull
         Integer price
+
 ) {
 }

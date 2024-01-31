@@ -1,14 +1,13 @@
 package com.dev.garimpo.domain.assistance;
 
+import com.dev.garimpo.domain.category.Category;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Table(name = "Assistance")
 @Entity(name = "Assistance")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -20,6 +19,8 @@ public class Assistance {
     private String name;
 
     private Integer price;
+
+
 
     public Assistance(AssistanceRequestDTO data){
         this.name = data.name();
